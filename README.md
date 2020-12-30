@@ -8,12 +8,15 @@ In order to have admin privileges, user should login with email and password (th
 1. Adding data to database
 
 (POST request to http://127.0.0.1:5000/flights/)
+
 2. Updating data in database.
 
 (PUT request to http://127.0.0.1:5000/flights)
+
 3. Deleting data from database.
 
 (DELETE request to http://127.0.0.1:5000/flights)
+
 4. Terminating current admin session.
 (DELETE request to http://127.0.0.1:5000/end_session)
 
