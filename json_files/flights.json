@@ -1,0 +1,106 @@
+[
+    {
+        "city_from": "Baku",
+        "city_to": "Ganja",
+        "departure_time": "June_01,06:00am",
+        "arrival_time": "June_01,06:54am",
+        "airplane": "airplane_1",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Baku",
+        "city_to": "Ganja",
+        "departure_time": "June_02,06:00am",
+        "arrival_time": "June_02,06:54am",
+        "airplane": "airplane_1",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Baku",
+        "city_to": "Moscow",
+        "departure_time": "May_08,07:00am",
+        "arrival_time": "May_08,10:20am",
+        "airplane": "airplane_2",
+        "passenger_number": "400"
+    },
+    {
+        "city_from": "New York",
+        "city_to": "Moscow",
+        "departure_time": "October_28,10:00am",
+        "arrival_time": "October_28,20:00pm",
+        "airplane": "airplane_3",
+        "passenger_number": "200"
+    },
+    {
+        "city_from": "Tokyo",
+        "city_to": "California",
+        "departure_time": "February_13,08:00am",
+        "arrival_time": "February_13,15:00pm",
+        "airplane": "airplane_1",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Tokyo",
+        "city_to": "London",
+        "departure_time": "September_03,03:00am",
+        "arrival_time": "September_04,02:00am",
+        "airplane": "airplane_2",
+        "passenger_number": "200"
+    },
+    {
+        "city_from": "Los Angeles",
+        "city_to": "Chicago",
+        "departure_time": "August_21,11:00am",
+        "arrival_time": "August_21,14:37pm",
+        "airplane": "airplane_3",
+        "passenger_number": "400"
+    },
+    {
+        "city_from": "Paris",
+        "city_to": "Berlin",
+        "departure_time": "November_02,06:30am",
+        "arrival_time": "November_02,08:49am",
+        "airplane": "airplane_1",
+        "passenger_number": "400"
+    },
+    {
+        "city_from": "Baku",
+        "city_to": "Ganja",
+        "departure_time": "August_05,06:00am",
+        "arrival_time": "August_05,06:54am",
+        "airplane": "airplane_2",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Dubai",
+        "city_to": "Miami",
+        "departure_time": "July_01,13:00pm",
+        "arrival_time": "July_01,18:00pm",
+        "airplane": "airplane_3",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Rome",
+        "city_to": "Barcelone",
+        "departure_time": "October_24,06:00am",
+        "arrival_time": "October_24,09:00am",
+        "airplane": "airplane_1",
+        "passenger_number": "200"
+    },
+    {
+        "city_from": "Delhi",
+        "city_to": "Shanghai",
+        "departure_time": "January_29,17:00pm",
+        "arrival_time": "January_29,00:00am",
+        "airplane": "airplane_2",
+        "passenger_number": "300"
+    },
+    {
+        "city_from": "Mexico",
+        "city_to": "Cairo",
+        "departure_time": "May_10,21:00pm",
+        "arrival_time": "May_10,04:00am",
+        "airplane": "airplane_3",
+        "passenger_number": "250"
+    }
+]

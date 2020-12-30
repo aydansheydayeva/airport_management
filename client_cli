@@ -1,0 +1,128 @@
+aydansheydayeva$ python3 client.py 
+Role (user or admin): user
+
+User can make a GET request to http://127.0.0.1:5000/flights/<city_from>/<city_to>
+
+city_from: Baku
+city_to: Ganja
+
+Results:
+From: Baku, To:Ganja, Departure: June_01,06:00am, Arrival: June_01,06:54am, Airplane: airplane_1, Passenger Number: 300
+From: Baku, To:Ganja, Departure: June_02,06:00am, Arrival: June_02,06:54am, Airplane: airplane_1, Passenger Number: 300
+From: Baku, To:Ganja, Departure: August_05,06:00am, Arrival: August_05,06:54am, Airplane: airplane_2, Passenger Number: 300
+
+Role (user or admin): admin
+
+Email: admin2@gmail.com
+Password: pass456
+
+Original DB:
+
+ID: 1, From: Baku, To:Ganja, Departure: June_01,06:00am, Arrival: June_01,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 2, From: Baku, To:Ganja, Departure: June_02,06:00am, Arrival: June_02,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 3, From: Baku, To:Moscow, Departure: May_08,07:00am, Arrival: May_08,10:20am, Airplane: airplane_2, Passenger Number: 400
+ID: 4, From: New York, To:Moscow, Departure: October_28,10:00am, Arrival: October_28,20:00pm, Airplane: airplane_3, Passenger Number: 200
+ID: 5, From: Tokyo, To:California, Departure: February_13,08:00am, Arrival: February_13,15:00pm, Airplane: airplane_1, Passenger Number: 300
+ID: 6, From: Tokyo, To:London, Departure: September_03,03:00am, Arrival: September_04,02:00am, Airplane: airplane_2, Passenger Number: 200
+ID: 7, From: Los Angeles, To:Chicago, Departure: August_21,11:00am, Arrival: August_21,14:37pm, Airplane: airplane_3, Passenger Number: 400
+ID: 8, From: Paris, To:Berlin, Departure: November_02,06:30am, Arrival: November_02,08:49am, Airplane: airplane_1, Passenger Number: 400
+ID: 9, From: Baku, To:Ganja, Departure: August_05,06:00am, Arrival: August_05,06:54am, Airplane: airplane_2, Passenger Number: 300
+ID: 10, From: Dubai, To:Miami, Departure: July_01,13:00pm, Arrival: July_01,18:00pm, Airplane: airplane_3, Passenger Number: 300
+ID: 11, From: Rome, To:Barcelone, Departure: October_24,06:00am, Arrival: October_24,09:00am, Airplane: airplane_1, Passenger Number: 200
+ID: 12, From: Delhi, To:Shanghai, Departure: January_29,17:00pm, Arrival: January_29,00:00am, Airplane: airplane_2, Passenger Number: 300
+ID: 13, From: Mexico, To:Cairo, Departure: May_10,21:00pm, Arrival: May_10,04:00am, Airplane: airplane_3, Passenger Number: 250
+
+
+------------------
+ADMIN OPTIONS:
+
+*** please, enter flight data without spaces. For example: NOT "June 18, 08:00am", type "June_18,_08:00am"
+
+1. POST <city_from> <city_to> <departure_time> <arrival_time> <airplane> <passenger_number>
+
+2. DELETE <flight_id>
+
+3. PUT <flight_id>
+
+4. END_SESSION
+
+------------------
+Which option would you like to use? 1
+Type command: POST Mexico Baku may_15,09:00am may_15,23:59pm airplane_5 566
+
+DB after POST request:
+
+ID: 1, From: Baku, To:Ganja, Departure: June_01,06:00am, Arrival: June_01,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 2, From: Baku, To:Ganja, Departure: June_02,06:00am, Arrival: June_02,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 3, From: Baku, To:Moscow, Departure: May_08,07:00am, Arrival: May_08,10:20am, Airplane: airplane_2, Passenger Number: 400
+ID: 4, From: New York, To:Moscow, Departure: October_28,10:00am, Arrival: October_28,20:00pm, Airplane: airplane_3, Passenger Number: 200
+ID: 5, From: Tokyo, To:California, Departure: February_13,08:00am, Arrival: February_13,15:00pm, Airplane: airplane_1, Passenger Number: 300
+ID: 6, From: Tokyo, To:London, Departure: September_03,03:00am, Arrival: September_04,02:00am, Airplane: airplane_2, Passenger Number: 200
+ID: 7, From: Los Angeles, To:Chicago, Departure: August_21,11:00am, Arrival: August_21,14:37pm, Airplane: airplane_3, Passenger Number: 400
+ID: 8, From: Paris, To:Berlin, Departure: November_02,06:30am, Arrival: November_02,08:49am, Airplane: airplane_1, Passenger Number: 400
+ID: 9, From: Baku, To:Ganja, Departure: August_05,06:00am, Arrival: August_05,06:54am, Airplane: airplane_2, Passenger Number: 300
+ID: 10, From: Dubai, To:Miami, Departure: July_01,13:00pm, Arrival: July_01,18:00pm, Airplane: airplane_3, Passenger Number: 300
+ID: 11, From: Rome, To:Barcelone, Departure: October_24,06:00am, Arrival: October_24,09:00am, Airplane: airplane_1, Passenger Number: 200
+ID: 12, From: Delhi, To:Shanghai, Departure: January_29,17:00pm, Arrival: January_29,00:00am, Airplane: airplane_2, Passenger Number: 300
+ID: 13, From: Mexico, To:Cairo, Departure: May_10,21:00pm, Arrival: May_10,04:00am, Airplane: airplane_3, Passenger Number: 250
+ID: 14, From: Mexico, To:Baku, Departure: may_15,09:00am, Arrival: may_15,23:59pm, Airplane: airplane_5, Passenger Number: 566
+
+Which option would you like to use? 2
+Type command: DELETE 6
+
+DB after DELETE request:
+
+ID: 1, From: Baku, To:Ganja, Departure: June_01,06:00am, Arrival: June_01,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 2, From: Baku, To:Ganja, Departure: June_02,06:00am, Arrival: June_02,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 3, From: Baku, To:Moscow, Departure: May_08,07:00am, Arrival: May_08,10:20am, Airplane: airplane_2, Passenger Number: 400
+ID: 4, From: New York, To:Moscow, Departure: October_28,10:00am, Arrival: October_28,20:00pm, Airplane: airplane_3, Passenger Number: 200
+ID: 5, From: Tokyo, To:California, Departure: February_13,08:00am, Arrival: February_13,15:00pm, Airplane: airplane_1, Passenger Number: 300
+ID: 7, From: Los Angeles, To:Chicago, Departure: August_21,11:00am, Arrival: August_21,14:37pm, Airplane: airplane_3, Passenger Number: 400
+ID: 8, From: Paris, To:Berlin, Departure: November_02,06:30am, Arrival: November_02,08:49am, Airplane: airplane_1, Passenger Number: 400
+ID: 9, From: Baku, To:Ganja, Departure: August_05,06:00am, Arrival: August_05,06:54am, Airplane: airplane_2, Passenger Number: 300
+ID: 10, From: Dubai, To:Miami, Departure: July_01,13:00pm, Arrival: July_01,18:00pm, Airplane: airplane_3, Passenger Number: 300
+ID: 11, From: Rome, To:Barcelone, Departure: October_24,06:00am, Arrival: October_24,09:00am, Airplane: airplane_1, Passenger Number: 200
+ID: 12, From: Delhi, To:Shanghai, Departure: January_29,17:00pm, Arrival: January_29,00:00am, Airplane: airplane_2, Passenger Number: 300
+ID: 13, From: Mexico, To:Cairo, Departure: May_10,21:00pm, Arrival: May_10,04:00am, Airplane: airplane_3, Passenger Number: 250
+ID: 14, From: Mexico, To:Baku, Departure: may_15,09:00am, Arrival: may_15,23:59pm, Airplane: airplane_5, Passenger Number: 566
+
+Which option would you like to use? 3  
+Type command: PUT 9
+
+new city_from: aaaa
+new city_to: bbbb
+new departure_time: august_31,09:00am
+new arrival_time: august_31,15:10pm
+new airplane_info: airplane_5
+new passengerNumber: 350
+
+DB after PUT request:
+
+ID: 1, From: Baku, To:Ganja, Departure: June_01,06:00am, Arrival: June_01,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 2, From: Baku, To:Ganja, Departure: June_02,06:00am, Arrival: June_02,06:54am, Airplane: airplane_1, Passenger Number: 300
+ID: 3, From: Baku, To:Moscow, Departure: May_08,07:00am, Arrival: May_08,10:20am, Airplane: airplane_2, Passenger Number: 400
+ID: 4, From: New York, To:Moscow, Departure: October_28,10:00am, Arrival: October_28,20:00pm, Airplane: airplane_3, Passenger Number: 200
+ID: 5, From: Tokyo, To:California, Departure: February_13,08:00am, Arrival: February_13,15:00pm, Airplane: airplane_1, Passenger Number: 300
+ID: 7, From: Los Angeles, To:Chicago, Departure: August_21,11:00am, Arrival: August_21,14:37pm, Airplane: airplane_3, Passenger Number: 400
+ID: 8, From: Paris, To:Berlin, Departure: November_02,06:30am, Arrival: November_02,08:49am, Airplane: airplane_1, Passenger Number: 400
+ID: 9, From: aaaa, To:bbbb, Departure: august_31,09:00am, Arrival: august_31,15:10pm, Airplane: airplane_5, Passenger Number: 350
+ID: 10, From: Dubai, To:Miami, Departure: July_01,13:00pm, Arrival: July_01,18:00pm, Airplane: airplane_3, Passenger Number: 300
+ID: 11, From: Rome, To:Barcelone, Departure: October_24,06:00am, Arrival: October_24,09:00am, Airplane: airplane_1, Passenger Number: 200
+ID: 12, From: Delhi, To:Shanghai, Departure: January_29,17:00pm, Arrival: January_29,00:00am, Airplane: airplane_2, Passenger Number: 300
+ID: 13, From: Mexico, To:Cairo, Departure: May_10,21:00pm, Arrival: May_10,04:00am, Airplane: airplane_3, Passenger Number: 250
+ID: 14, From: Mexico, To:Baku, Departure: may_15,09:00am, Arrival: may_15,23:59pm, Airplane: airplane_5, Passenger Number: 566
+
+Which option would you like to use? 4
+Type command: END_SESSION
+
+Role (user or admin): user
+
+User can make a GET request to http://127.0.0.1:5000/flights/<city_from>/<city_to>
+
+city_from: aaaa
+city_to: bbbb
+
+Results:
+From: aaaa, To:bbbb, Departure: august_31,09:00am, Arrival: august_31,15:10pm, Airplane: airplane_5, Passenger Number: 350
+
+Role (user or admin): 
